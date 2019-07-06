@@ -1,4 +1,4 @@
-package com.leedcode.test1;
+package com.leedcode.array.test1;
 
 import java.util.HashMap;
 import java.util.Map;

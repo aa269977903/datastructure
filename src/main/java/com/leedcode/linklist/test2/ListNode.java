@@ -1,4 +1,4 @@
-package com.leedcode.test2;
+package com.leedcode.linklist.test2;
 
 /**
  * Created by Administrator on 2019/7/5.

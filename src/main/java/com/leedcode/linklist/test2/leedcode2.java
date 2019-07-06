@@ -1,4 +1,4 @@
-package com.leedcode.test2;
+package com.leedcode.linklist.test2;
 
 /**
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，
