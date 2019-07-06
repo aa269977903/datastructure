@@ -1,4 +1,4 @@
-package com.cest.array.genericArrayType;
+package com.cest.array.genericArray;
 
 /**
  * Created by Administrator on 2019/7/4.
