@@ -10,6 +10,44 @@ package com.leedcode.linklist.test2;
  */
 public class leedcode2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        return null;
+        ListNode listNode = new ListNode(0);
+        ListNode cur = listNode;
+
+        //承载进位的数值
+        int tmp = 0;
+
+        while (l1 != null || l2 != null){
+            int x1 = l1 == null ? 0 : l1.val;
+            int x2 = l2 == null ? 0 : l2.val;
+
+            int total = x1 + x2 + tmp;
+            //tmp取商
+            tmp = total / 10;
+            //结果取余
+            total = total % 10;
+
+            cur.next = new ListNode(total);
+            cur = cur.next;
+
+            if(l1 != null)
+                l1 = l1.next;
+            if(l2 != null)
+                l2 = l2.next;
+        }
+
+        if(tmp == 1){
+            cur.next = new ListNode(tmp);
+        }
+        return listNode.next;
+    }
+
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(1);
+        l1.next = new ListNode(8);
+
+        ListNode l2 = new ListNode(0);
+
+        ListNode listNode = new leedcode2().addTwoNumbers(l1, l2);
+        System.out.println(listNode);
     }
 }
