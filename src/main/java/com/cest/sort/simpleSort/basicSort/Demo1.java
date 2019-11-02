@@ -1,4 +1,4 @@
-package com.cest.sort.basicSort;
+package com.cest.sort.simpleSort.basicSort;
 
 import lombok.extern.slf4j.Slf4j;
 
